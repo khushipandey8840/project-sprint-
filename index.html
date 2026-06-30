@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Cover Letter Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cover Letter Generator</h1>
+        <input type="text" id="name" placeholder="Candidate Name">
+        <input type="text" id="role" placeholder="Job Role">
+        <input type="text" id="company" placeholder="Target Company">
+        <input type="text" id="skills" placeholder="Key Skills">
+        
+        <button onclick="generateLetter()">Generate</button>
+
+        <div id="result-area" style="display:none;">
+            <h3>Your Cover Letter:</h3>
+            <p id="output"></p>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
